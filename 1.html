@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            border: 8px solid whitesmoke;
+            margin: 0px;
+            min-width: 100px;
+            box-sizing: border-box;
+            background-color: whitesmoke;
+            
+        }
+        .header ul{
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        ul > li{
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           font-size: larger; 
+        }
+        .header ul li a{
+            text-decoration: none;
+            color: green;
+        }
+        .header ul li a:hover{
+            /* border: 1px solid red; */
+            border-top: 4px solid rgb(128, 0, 0);
+            color: rgb(128, 0, 0);
+        }
+        .header ul li a:active{
+            border-top: 4px solid rgb(0, 34, 128);
+            color: rgb(0, 34, 128);
+
+        }
+
+        .img{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        img{
+            border: 2px solid greenyellow;
+            box-sizing: border-box;
+            box-shadow: 2px 4px yellow;
+        }
+        h1{
+            
+            text-align: center;
+        }
+        .section{
+            margin-top: 20px;
+            background-color: rgb(147, 128, 160);
+            box-sizing: content-box;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        .part{
+            background-color: aquamarine;
+            box-shadow: 6px 6px blueviolet;
+            border: 2px solid aqua;
+            border-radius: 10px;
+            
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: small;
+            
+        }
+        @media screen and (max-width: 768px) {
+            .header ul {
+                flex-direction: column;
+                gap: 10px;
+                
+            }
+            ul > li {
+                font-size: medium;
+            }
+            .img img {
+                height: 150px;
+                width: 150px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .section {
+                padding: 15px;
+            }
+            p {
+                font-size: smaller;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header ul {
+                gap: 5px;
+                padding: 10px;
+            }
+            ul > li {
+                font-size: small;
+            }
+            .img img {
+                height: 100px;
+                width: 100px;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+            .section {
+                padding: 10px;
+            }
+            p {
+                font-size: x-small;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="./1.html">About</a></li>
+            <li><a href="./2.html">Carrer</a></li>
+            <li><a href="./3.html">Personal life</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <div class="img">
+            <img src="./image.png" alt="vk" height="200px" width="200px">
+        </div>
+        <div class="part">
+            <h1> VIRAT KOHLI - THE KING</h1>
+            <p>India has given to the world many a great cricketer but perhaps none as ambitious as Virat Kohli. To meet his ambition, Kohli employed the technical assiduousness of Sachin Tendulkar and fitness that was in the league of top athletes in the world, not just cricketers. As a result, Kohli became the most consistent all-format accumulator of his time, making jaw-dropping chases <br>look easy, and finding, in his own words, the safest possible way to score runs. Plenty of them.</p>
+            <p>This ambition transferred seamlessly to his captaincy: he demanded more than ever of his bowlers especially the quick ones, often sacrificed a batsman for bowling depth, and led India to a long stay at No. 1 in Test rankings and a first-ever series win in Australia. He is well on his way to end up as India's most successful Test captain.
+
+                Barring one in Bangladesh, Kohli scored Test hundreds in and against every country he played. He absolutely smashed records for number of matches taken to reach eight, nine, ten and eleven thousand ODI runs, and became the first batter to score 50 hundreds in one-day internationals.
+                
+                An Under-19 world Cup-winning captain, when he burst onto the scene, Kohli was a precocious talent with a cover drive to kill for. He was destined to be India's next big batsman as the Tendulkar era began to retire, but Kohli wanted to be more: a cricketer whom the opposition would be in awe of, a cricketer whose presence would raise the intensity of the contest. He lived every ball, competed each moment, and made sure he had the fitness and strength to do so. He was widely credited for changing the fitness culture in Indian cricket, introducing endurance tests as a criterion for selection.
+                
+                Kohli was quite simply India's most powerful captain. Centre of every marketing campaign for Indian cricket, he also happened to lead at a time when the BCCI was run by interim administrators who knew better than to draw the ire of Indian cricket's biggest star. There was never any cause to doubt his intent: to do things that will win matches for India, which they did plenty under him.</p>
+        </div>
+    </div>
+</body>
+</html>

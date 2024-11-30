@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            border: 8px solid whitesmoke;
+            margin: 0px;
+            min-width: 100px;
+            box-sizing: border-box;
+            background-color: whitesmoke;
+        }
+        .header ul{
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        ul > li{
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           font-size: larger; 
+        }
+        .header ul li a{
+            text-decoration: none;
+            color: green;
+        }
+        .header ul li a:hover{
+            /* border: 1px solid red; */
+            border-top: 4px solid rgb(128, 0, 0);
+            color: rgb(128, 0, 0);
+        }
+        .header ul li a:active{
+            border-top: 4px solid rgb(0, 34, 128);
+            color: rgb(0, 34, 128);
+
+        }
+
+        .section{
+            margin: 25px;
+            padding: 25px;
+            background-color: blueviolet;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            border: 2px solid greenyellow;
+            box-sizing: border-box;
+            box-shadow: 2px 4px yellow;
+        }
+        h1{
+            
+            text-align: center;
+        }
+        .part ul{
+            margin-top: 20px;
+            background-color: rgb(79, 224, 230);
+            box-sizing: content-box;
+            box-shadow: 2px 2px rgb(147, 35, 252);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .part ul ol li{
+            font-size: small;
+
+        }
+        @media screen and (max-width: 768px) {
+            .header ul {
+                flex-direction: column;
+                gap: 10px;
+                
+            }
+            ul > li {
+                font-size: medium;
+            }
+            .img img {
+                height: 150px;
+                width: 150px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .section {
+                padding: 15px;
+            }
+            p {
+                font-size: smaller;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header ul {
+                gap: 5px;
+                padding: 10px;
+            }
+            ul > li {
+                font-size: small;
+            }
+            .img img {
+                height: 100px;
+                width: 100px;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+            .section {
+                padding: 10px;
+            }
+            p {
+                font-size: x-small;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="./1.html">About</a></li>
+            <li><a href="./2.html">Carrer</a></li>
+            <li><a href="./3.html">Personal life</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <div class="img">
+            <img src="./th (2).jpeg" alt="vk" height="200px" width="200px">
+        </div>
+        <div class="part">
+            <h1> VIRAT KOHLI - THE KING</h1>
+            <ul>
+                <h2><b><u>Carrer</u></b></h2>
+                <li>
+                    <b>Early Life and Beginnings (1988-2008)</b><br>
+                    <ol>
+                        <li>Born on November 5, 1988, in Delhi, Virat Kohli showcased a passion for cricket from a young age.</li>
+                        <li>Trained under Rajkumar Sharma at the West Delhi Cricket Academy, he quickly emerged as a prodigy.</li>
+                        <li>In 2008, Kohli captained the Indian U-19 team to victory in the ICC U-19 Cricket World Cup held in Malaysia. This achievement marked his entry onto the international stage.</li>
+                    </ol>
+                </li>
+
+                <li>
+                    <b>Rise to Stardom: ODI Debut and Early Success (2008-2011)</b>
+                    <ol>
+                        <li>Kohli made his ODI debut against Sri Lanka in August 2008.</li>
+                        <li>He scored his maiden ODI century in 2009, cementing his spot in the team.</li>
+                        <li>A crucial part of India's 2011 ICC Cricket World Cup-winning squad, Kohli scored an essential 83 in the opening match and supported Gautam Gambhir in the final with a steady 35.</li>
+                    </ol>
+                </li>
+                <li>
+                    <b>Dominating World Cricket: The Run Machine (2012-2017)</b>
+                    <ol>
+                        <li>From 2012 onwards, Kohli’s consistency redefined batting standards in international cricket.</li>
+                        <li>Known for chasing big totals, his knock of 133 off 86 balls* against Sri Lanka in 2012 showcased his prowess.</li>
+                        <li>Appointed vice-captain of the ODI team in 2012, he gradually evolved into a leader.</li>
+                        <li>Became the fastest batsman to score 10,000 ODI runs, achieving the feat in just 205 innings.</li>
+                    </ol>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
